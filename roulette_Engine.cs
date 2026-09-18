@@ -366,7 +366,7 @@ public class CPHInline
                     return;
                 }
                 Miss(source, user);
-                config.numberOfChambers--;
+                // Round already counts used chambers; keep the configured total unchanged.
             }
         }
         while ((GameState & GameStates.Knockout) != 0);
